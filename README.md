@@ -15,7 +15,7 @@ This project was developed in Desenvolvimento de Aplicações Web (Development o
 
 The architecture is composed by four machines and the database hosted on Google Cloud Platform.
 
-There is a machine hosting a Nginx server which will be serving static content and load balancing the API requests into other two machines (Resource Servers - RS). These machines are hosting a Spring Boot application that access the DB for storing and retrieving data.
+There is a machine hosting a Nginx server which will be serving static content and load balancing the API requests into other two machines (Resource Servers - RS). These machines are hosting a Spring Boot application that access the DB for storing and retrieving data. Check API [endpoints](/docs/Endpoints.md).
 
 When a client first accesses the webapp he/she will need to signin via the Authorization Server (AS) which is hosting a MITREid server through Tomcat. Then the webapp will receive an OAuth2.0 code which will exchange for the Access Token (AT) and other user information with the AS. This AT will be used for future requests to the API via the Nginx load balancer. Those RSs will acquire the user information through the Token Introspection Endpoint exposed by the AS.
 

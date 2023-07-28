@@ -1,0 +1,70 @@
+// Media-Type: application/vnd.siren+json
+
+{
+    "class": [ "project" ], // colocar /classes/project ?
+    "properties": {
+        "name": "Project 1",
+        "description": "Project example 1",
+        "initialState": "Created"
+    },
+    "links": [
+        { "rel": [ "self" ], "href": "/projects/1" },
+        { "rel": [ "collection" ], "href": "/projects" },
+        { "rel": [ "/rels/issues" ], "href": "/projects/1/issues" },
+        { "rel": [ "/rels/labels" ], "href": "/projects/1/labels" },
+        { "rel": [ "/rels/states" ], "href": "/projects/1/states" },
+        { "rel": [ "/rels/transitions" ], "href": "/projects/1/transitions" },
+        { "rel": [ "/rels/members" ], "href": "/projects/1/members" }
+    ],
+    "actions": [
+        {
+            "name": "/actions/delete-project",
+            "title": "Delete project",
+            "method": "DELETE",
+            "href": "/projects/1"
+        },
+        {
+            "name": "/actions/update-project-name",
+            "title": "Update project name",
+            "method": "PATCH",
+            "href": "/projects/1/name",
+            "type": "application/json",
+            "fields": [
+                { "name": "name", "type": "text" }
+            ]
+        },
+        {
+            "name": "/actions/update-project-description",
+            "title": "Update project description",
+            "method": "PATCH",
+            "href": "/projects/1/description",
+            "type": "application/json",
+            "fields": [
+                { "name": "description", "type": "text" }
+            ]
+        },
+        {
+            "name": "/actions/update-project-initialState",
+            "title": "Update project initial State",
+            "method": "PATCH",
+            "href": "/projects/1/initialState",
+            "type": "application/json",
+            "fields": [
+                { "name": "initialState", "type": "text" }
+            ]
+        },
+        {
+            "name": "/actions/update-project",
+            "title": "Update project",
+            "method": "PUT",
+            "href": "/projects/1",
+            "type": "application/json",
+            "fields": [
+                { "name": "name", "type": "text" },
+                { "name": "description", "type": "text" },
+                { "name": "initialState", "type": "text" }
+            ]
+        }
+    ],
+    "entities": []
+}

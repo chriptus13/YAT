@@ -1,0 +1,20 @@
+{
+    "count": 3,
+    "_links": {
+        "self": { "href": "/projects/1/members"},
+        "parent": { "href": "/projects/1"}
+    },
+    "_embedded": {
+        "members": [
+            {
+                "username": "cbartolomeu"
+            },
+            {
+                "username": "marcomartins1998"
+            },
+            {
+                "username": "chriptus13"
+            }
+        ]
+    }
+}

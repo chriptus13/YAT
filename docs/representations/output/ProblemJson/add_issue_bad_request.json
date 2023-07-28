@@ -1,0 +1,5 @@
+{
+    "type": "InvalidOperationException",
+    "title": "Invalid operation.",
+    "detail": "Initial state for project with id 2 not set."
+}

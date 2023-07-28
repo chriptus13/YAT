@@ -1,0 +1,5 @@
+{
+    "type": "AuthenticationException",
+    "title": "Authentication error.",
+    "detail": "Incorrect username or password."
+}

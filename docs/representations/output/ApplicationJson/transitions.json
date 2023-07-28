@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "project":1,
+        "startState": "archived",
+        "endState": "closed"
+    },
+    {
+        "id": 2,
+        "project":1,
+        "startState": "new",
+        "endState": "closed"
+    }
+]

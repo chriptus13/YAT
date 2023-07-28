@@ -1,0 +1,33 @@
+// Media-Type: application/vnd.siren+json
+
+{
+    "class": [ "comment" ],
+    "properties": {
+        "creator": "cbartolomeu",
+        "text": "Urgent issue, needs early fix.",
+        "created": "2019-04-05"
+    },
+    "links": [
+        { "rel": [ "self" ], "href": "/projects/1/issues/1/comments/1" },
+        { "rel": [ "parent" ], "href": "/projects/1/issues/1" }
+    ],
+    "actions": [
+        {
+            "name": "/actions/update-comment",
+            "title": "Update comment",
+            "method": "PUT",
+            "href": "/projects/1/issues/1/comments/1",
+            "type": "application/json",
+            "fields": [
+                { "name": "text", "type": "text" }
+            ]
+        },
+        {
+            "name": "/actions/delete-comment",
+            "title": "Delete comment",
+            "method": "DELETE",
+            "href": "/projects/1/issues/1/comments/1"
+        }
+    ],
+    "entities": [ ]
+}

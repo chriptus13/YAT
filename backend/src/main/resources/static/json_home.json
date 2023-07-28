@@ -1,0 +1,253 @@
+{
+  "api": {
+    "title": "DAW API"
+  },
+  "resources": {
+    "/rels/projects": {
+      "href": "/projects",
+      "hints": {
+        "allow": [
+          "GET",
+          "POST"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPost": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project": {
+      "hrefTemplate": "/projects/{pid}",
+      "hrefVars": {
+        "pid": "/params/pid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPut": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/issues": {
+      "hrefTemplate": "/projects/{pid}/issues",
+      "hrefVars": {
+        "pid": "/params/pid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "POST"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPost": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/issue": {
+      "hrefTemplate": "/projects/{pid}/issues/{iid}",
+      "hrefVars": {
+        "pid": "/params/pid",
+        "iid": "/params/iid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPut": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/issue/comments": {
+      "hrefTemplate": "/projects/{pid}/issues/{iid}/comments",
+      "hrefVars": {
+        "pid": "/params/pid",
+        "iid": "/params/iid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "POST"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPost": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/states": {
+      "hrefTemplate": "/projects/{pid}/states",
+      "hrefVars": {
+        "pid": "/params/pid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "PATCH"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPatch": [
+          "application/json-patch+json"
+        ]
+      }
+    },
+    "/rels/project/labels": {
+      "hrefTemplate": "/projects/{pid}/labels",
+      "hrefVars": {
+        "pid": "/params/pid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "PATCH"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPatch": [
+          "application/json-patch+json"
+        ]
+      }
+    },
+    "/rels/project/issue/labels": {
+      "hrefTemplate": "/projects/{pid}/issues/{iid}/labels",
+      "hrefVars": {
+        "pid": "/params/pid",
+        "iid": "/params/iid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "PATCH"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPatch": [
+          "application/json-patch+json"
+        ]
+      }
+    },
+    "/rels/project/transitions": {
+      "hrefTemplate": "/projects/{pid}/transitions",
+      "hrefVars": {
+        "pid": "/params/pid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "POST"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPost": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/transition": {
+      "hrefTemplate": "/projects/{pid}/transitions/{tid}",
+      "hrefVars": {
+        "pid": "/params/pid",
+        "tid": "/params/tid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "DELETE"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPut": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/members": {
+      "hrefTemplate": "/projects/{pid}/members",
+      "hrefVars": {
+        "pid": "/params/pid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "PATCH"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPatch": [
+          "application/json-patch+json"
+        ]
+      }
+    },
+    "/rels/project/issue/comment": {
+      "hrefTemplate": "/projects/{pid}/issues/{iid}/comments/{cid}",
+      "hrefVars": {
+        "pid": "/params/pid",
+        "iid": "/params/iid",
+        "cid": "/params/cid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/hal+json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPut": [
+          "application/json"
+        ]
+      }
+    }
+  }
+}

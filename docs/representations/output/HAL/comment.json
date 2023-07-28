@@ -1,0 +1,10 @@
+{
+    "creator": "cbartolomeu",
+    "text": "Urgent issue, needs early fix.",
+    "created": "2019-04-05",
+    "_links": {
+        "self": { "href": "/projects/1/issues/1/comments/1" },
+        "parent": { "href": "/projects/1/issues/1" }   
+    },
+    "_embedded": {}
+}

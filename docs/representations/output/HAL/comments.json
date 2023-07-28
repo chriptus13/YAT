@@ -1,0 +1,35 @@
+{
+    "count": 3,
+    "_links": {
+        "self": { "href": "/projects/1/issues/1/comments"},
+        "parent": { "href": "/projects/1/issues/1"}
+    },
+    "_embedded": {
+        "comments": [
+            {
+                "creator": "marcomartins1998",
+                "text": "Small issue, fix can wait.",
+                "created": "2018-08-13",
+                "_links": {
+                    "self": { "href": "/projects/1/issues/1/comments/1" }
+                }
+            },
+            {
+                "creator": "chriptus13",
+                "text": "Mild issue, better fix this soon.",
+                "created": "2019-02-01",
+                "_links": {
+                    "self": { "href": "/projects/1/issues/1/comments/2" }
+                }
+            },
+            {
+                "creator": "cbartolomeu",
+                "text": "Urgent issue, needs early fix.",
+                "created": "2019-04-05",
+                "_links": {
+                    "self": { "href": "/projects/1/issues/1/comments/3" }
+                }
+            }
+        ]
+    }
+}

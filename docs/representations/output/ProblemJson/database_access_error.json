@@ -1,0 +1,5 @@
+{
+    "type": "DatabaseAccessException",
+    "title": "Database access error.",
+    "detail": "Error accessing database."
+}

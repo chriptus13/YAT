@@ -1,0 +1,25 @@
+{
+    "count": 2,
+    "_links": {
+        "self": { "href": "/projects/1/transitions"},
+        "parent": { "href": "/projects/1"}
+    },
+    "_embedded": {
+        "transitions": [
+            {
+                "startState": "archived",
+                "endState": "closed",
+                "_links": {
+                    "self": { "href": "/projects/1/transitions/1" }
+                }
+            },
+            {
+                "startState": "new",
+                "endState": "closed",
+                "_links": {
+                    "self": { "href": "/projects/1/transitions/2" }
+                }
+            }
+        ]
+    }
+}

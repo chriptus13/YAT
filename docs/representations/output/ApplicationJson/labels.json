@@ -1,0 +1,14 @@
+[
+    {
+        "name": "defect"
+    },
+    {
+        "name": "new-functionality"
+    },
+    {
+        "name": "exploration"
+    },
+    {
+        "name": "deprecated"
+    }
+]

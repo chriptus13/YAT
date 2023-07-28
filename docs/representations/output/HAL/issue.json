@@ -1,0 +1,15 @@
+{ 
+    "creator": "marcomartins1998",
+    "name": "Issue 1",
+    "description": "Issue example 1",
+    "created": "2018-09-18",
+    "closed": "2019-04-08",
+    "state": "closed",
+    "_links": {
+        "self": { "href": "/projects/1/issues/1"},
+        "parent": { "href": "/projects/1"},
+        "/rels/labels": { "href": "/projects/1/issues/1/labels" },
+        "/rels/comments": { "href": "/projects/1/issues/1/comments" }
+    },
+    "_embedded": {}
+}

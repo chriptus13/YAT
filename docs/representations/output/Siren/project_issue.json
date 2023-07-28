@@ -1,0 +1,69 @@
+// Media-Type: application/vnd.siren+json
+
+{
+    "class": [ "issue" ],
+    "properties": { 
+        "creator": "marcomartins1998",
+        "name": "Issue 1",
+        "description": "Issue example 1",
+        "created": "2018-09-18",
+        "closed": "2019-04-08",
+        "state": "closed"
+    },
+    "links": [ 
+        { "rel": [ "self" ], "href": "/projects/1/issues/1" },
+        { "rel": [ "parent" ], "href": "/projects/1" },
+        { "rel": [ "/rels/labels" ], "href": "/projects/1/issues/1/labels" },
+        { "rel": [ "/rels/comments" ], "href": "/projects/1/issues/1/comments" }
+    ],
+    "actions": [
+        {
+            "name": "/actions/update-issue",
+            "title": "Update issue",
+            "method": "PUT",
+            "href": "/projects/1/issues/1",
+            "type": "application/json",
+            "fields": [
+                { "name": "name", "type": "text" },
+                { "name": "description", "type": "text" }
+            ]
+        },
+        {
+            "name": "/actions/delete-issue",
+            "title": "Delete issue",
+            "method": "DELETE",
+            "href": "/projects/1/issues/1"
+        },
+        {
+            "name": "/actions/update-issue-name",
+            "title": "Update issue name",
+            "method": "PATCH",
+            "href": "/projects/1/issues/1/name",
+            "type": "application/json",
+            "fields": [
+                { "name": "name", "type": "text" }
+            ]
+        },
+        {
+            "name": "/actions/update-issue-description",
+            "title": "Update issue description",
+            "method": "PATCH",
+            "href": "/projects/1/issues/1/description",
+            "type": "application/json",
+            "fields": [
+                { "name": "description", "type": "text" }
+            ]
+        },
+        {
+            "name": "/actions/update-issue-state",
+            "title": "Update issue state",
+            "method": "PATCH",
+            "href": "/projects/1/issues/1/state",
+            "type": "application/json",
+            "fields": [
+                { "name": "state", "type": "text" }
+            ]
+        }
+    ],
+    "entities": [ ]
+}

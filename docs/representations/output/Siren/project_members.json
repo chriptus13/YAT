@@ -1,0 +1,60 @@
+// Media-Type: application/vnd.siren+json
+
+{
+    "class": [ "array" ],
+    "properties": { 
+        "count": 3
+    },
+    "links": [
+        { "rel": [ "self" ], "href": "/projects/1/members" },
+        { "rel": [ "parent" ], "href": "/projects/1" }
+    ],
+    "actions": [ 
+        {
+            "name": "/actions/add-member",
+            "title": "Add Member",
+            "method": "PATCH",
+            "href": "/projects/1/members",
+            "type": "application/json-patch+json",
+            "fields": [
+                { "name": "op", "type": "text" },
+                { "name": "path", "type": "text" },
+                { "name": "value", "type": "text" }
+            ]
+        },
+        {
+            "name": "/actions/remove-member",
+            "title": "Remove Member",
+            "method": "PATCH",
+            "href": "/projects/1/members",
+            "type": "application/json-patch+json",
+            "fields": [
+                { "name": "op", "type": "text" },
+                { "name": "path", "type": "text" }
+            ]
+        }
+    ],
+    "entities": [ 
+        {
+            "class": ["member"],
+            "rel": ["item"],
+            "properties": {
+                "username": "cbartolomeu"
+            }
+        },
+        {
+            "class": ["member"],
+            "rel": ["item"],
+            "properties": {
+                "username": "marcomartins1998"
+            }
+        },
+        {
+            "class": ["member"],
+            "rel": ["item"],
+            "properties": {
+                "username": "chriptus13"
+            }
+        }
+    ]
+}

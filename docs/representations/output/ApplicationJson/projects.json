@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Project 1",
+        "description": "Project example 1",
+        "initialState": "Created"
+    },
+    {
+        "id": 2,
+        "name": "Project 2",
+        "description": "Project example 2",
+        "initialState": "Created"
+    },
+    {
+        "id": 3,
+        "name": "Project 3",
+        "description": "Project example 3",
+        "initialState": "Created"
+    }
+]

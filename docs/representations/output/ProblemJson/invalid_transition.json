@@ -1,0 +1,5 @@
+{
+    "type": "InvalidTransitionException",
+    "title": "Invalid transition.",
+    "detail": "Transition to state {SOME_STATE} is not possible."
+}

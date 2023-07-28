@@ -1,0 +1,60 @@
+// Media-Type: application/vnd.siren+json
+
+{
+    "class": [ "array" ],
+    "properties": {
+        "count": 3
+    },
+    "links": [
+        { "rel": [ "self" ], "href": "/projects/1/states" },
+        { "rel": [ "parent" ], "href": "/projects/1" }
+    ],
+    "actions": [
+        {
+            "name": "/actions/add-state",
+            "title": "Add State",
+            "method": "PATCH",
+            "href": "/projects/1/states",
+            "type": "application/json-patch+json",
+            "fields": [
+                { "name": "op", "type": "text" },
+                { "name": "path", "type": "text" },
+                { "name": "value", "type": "text" }
+            ]
+        },
+        {
+            "name": "/actions/remove-state",
+            "title": "Remove State",
+            "method": "PATCH",
+            "href": "/projects/1/states",
+            "type": "application/json-patch+json",
+            "fields": [
+                { "name": "op", "type": "text" },
+                { "name": "path", "type": "text" }
+            ]
+        }
+    ],
+    "entities": [
+        {
+            "class": ["state"],
+            "rel": ["item"],
+            "properties": {
+                "name": "archived"
+            }
+        },
+        {
+            "class": ["state"],
+            "rel": ["item"],
+            "properties": {
+                "name": "closed"
+            }
+        },
+        {
+            "class": ["state"],
+            "rel": ["item"],
+            "properties": {
+                "name": "new"
+            }
+        }
+    ]
+}

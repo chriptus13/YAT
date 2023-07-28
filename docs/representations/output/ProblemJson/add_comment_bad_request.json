@@ -1,0 +1,5 @@
+{
+    "type": "ArchivedCommentException",
+    "title": "Cannot add comments to archived issues.",
+    "detail": "Issue with id 2 already archived."
+}

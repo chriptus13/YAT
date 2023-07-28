@@ -1,0 +1,59 @@
+// Media-Type: application/vnd.siren+json
+
+{
+    "class": [ "array" ],
+    "properties": { 
+        "count": 3
+    },
+    "links": [ 
+        { "rel": [ "self" ], "href": "/projects/1/issues/1/comments"},
+        { "rel": [ "parent" ], "href": "/projects/1/issues/1"}
+    ],
+    "actions": [
+        {
+            "name": "/actions/create-comment",
+            "title": "Create comment",
+            "method": "POST",
+            "href": "/projects/1/issues/1/comments",
+            "type": "application/json",
+            "fields": [
+                { "name": "text", "type": "text" }
+            ]
+        }
+    ],
+    "entities": [ 
+        {
+            "class": [ "comment" ],
+            "rel": [ "item" ],
+            "properties": {
+                "creator": "marcomartins1998",
+                "text": "Small issue, fix can wait.",
+                "created": "2018-08-13"
+            },
+            "links": [
+                { "rel": [ "self" ], "href": "/projects/1/issues/1/comments/1" }]
+        },
+        {
+            "class": [ "comment" ],
+            "rel": [ "item" ],
+            "properties": {
+                "creator": "chriptus13",
+                "text": "Mild issue, better fix this soon.",
+                "created": "2019-02-01"
+            },
+            "links": [
+                { "rel": [ "self" ], "href": "/projects/1/issues/1/comments/2" }]
+        },
+        {
+            "class": [ "comment" ],
+            "rel": [ "item" ],
+            "properties": {
+                "creator": "cbartolomeu",
+                "text": "Urgent issue, needs early fix.",
+                "created": "2019-04-05"
+            },
+            "links": [
+                { "rel": [ "self" ], "href": "/projects/1/issues/1/comments/3" }]
+        }
+    ]
+}

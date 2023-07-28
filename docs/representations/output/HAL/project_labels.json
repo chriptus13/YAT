@@ -1,0 +1,23 @@
+{
+    "count": 4,
+    "_links": {
+        "self": { "href": "/projects/1/labels"},
+        "parent": { "href": "/projects/1"}
+    },
+    "_embedded": {
+        "labels": [
+            {
+                "name": "defect"
+            },
+            {
+                "name": "new-functionality"
+            },
+            {
+                "name": "exploration"
+            },
+            {
+                "name": "deprecated"
+            }
+        ]
+    }
+}

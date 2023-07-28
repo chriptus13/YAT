@@ -1,0 +1,5 @@
+{
+    "type": "AuthorizationException",
+    "title": "Authorization error.",
+    "detail": "User does not have permission to change project with id 2."
+}

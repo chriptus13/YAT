@@ -1,0 +1,67 @@
+// Media-Type: application/vnd.siren+json
+
+{
+    "class": [ "array" ],
+    "properties": { 
+        "count": 4
+    },
+    "links": [
+        { "rel": [ "self" ], "href": "/projects/1/labels"},
+        { "rel": [ "parent" ], "href": "/projects/1"}
+    ],
+    "actions": [ 
+        {
+            "name": "/actions/add-label",
+            "title": "Add Project Label",
+            "method": "PATCH",
+            "href": "/projects/1/labels",
+            "type": "application/json-patch+json",
+            "fields": [
+                { "name": "op", "type": "text" },
+                { "name": "path", "type": "text" },
+                { "name": "value", "type": "text" }
+            ]
+        },
+        {
+            "name": "/actions/remove-label",
+            "title": "Remove Project Label",
+            "method": "PATCH",
+            "href": "/projects/1/labels",
+            "type": "application/json-patch+json",
+            "fields": [
+                { "name": "op", "type": "text" },
+                { "name": "path", "type": "text" }
+            ]
+        }
+    ],
+    "entities": [ 
+        {
+            "class": ["label"],
+            "rel": ["item"],
+            "properties": {
+                "name": "defect"
+            }
+        },
+        {
+            "class": ["label"],
+            "rel": ["item"],
+            "properties": {
+                "name": "new-functionality"
+            }
+        },
+        {
+            "class": ["label"],
+            "rel": ["item"],
+            "properties": {
+                "name": "exploration"
+            }
+        },
+        {
+            "class": ["label"],
+            "rel": ["item"],
+            "properties": {
+                "name": "deprecated"
+            }
+        }
+    ]
+}

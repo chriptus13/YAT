@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "issue": 1,
+        "creator": "marcomartins1998",
+        "text": "Small issue, fix can wait.",
+        "created": "2018-08-13"
+    },
+    {
+        "id": 2,
+        "issue": 1,
+        "creator": "chriptus13",
+        "text": "Mild issue, better fix this soon.",
+        "created": "2019-02-01"
+    },
+    {
+        "id": 3,
+        "issue": 1,
+        "creator": "cbartolomeu",
+        "text": "Urgent issue, needs early fix.",
+        "created": "2019-04-05"
+    }
+]

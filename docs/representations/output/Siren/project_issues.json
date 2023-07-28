@@ -1,0 +1,57 @@
+// Media-Type: application/vnd.siren+json
+
+{
+    "class": [ "array" ],
+    "properties": { 
+        "count": 3
+    },
+    "links": [ 
+        { "rel": [ "self" ], "href": "/projects/1/issues" },
+        { "rel": [ "parent" ], "href": "/projects/1" }
+    ],
+    "actions": [ 
+        {
+            "name": "/actions/create-issue",
+            "title": "Create issue",
+            "method": "POST",
+            "href": "/projects/1/issues",
+            "type": "application/json",
+            "fields": [
+                { "name": "name", "type": "text" },
+                { "name": "description", "type": "text" }
+            ]
+        }
+    ],
+    "entities": [
+        {
+            "class": [ "issue", "short" ],
+            "rel": [ "item" ],
+            "properties": {
+                "name": "Issue 1"
+            },
+            "links": [
+                { "rel": [ "self" ], "href": "/projects/1/issues/1" }
+            ]
+        },
+        {
+            "class": [ "issue", "short" ],
+            "rel": [ "item" ],
+            "properties": {
+                "name": "Issue 2"
+            },
+            "links": [
+                { "rel": [ "self" ], "href": "/projects/1/issues/2" }
+            ]
+        },
+        {
+            "class": [ "issue", "short" ],
+            "rel": [ "item" ],
+            "properties": {
+                "name": "Issue 3"
+            },
+            "links": [
+                { "rel": [ "self" ], "href": "/projects/1/issues/3" }
+            ]
+        }
+    ]
+}

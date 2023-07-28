@@ -1,0 +1,6 @@
+// Media-Type: application/json-patch+json
+
+[
+	{ "op":"add", "path":"/", "value":"state1" },
+	{ "op":"remove", "path":"/state2" }
+]

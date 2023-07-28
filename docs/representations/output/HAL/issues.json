@@ -1,0 +1,29 @@
+{
+    "count": 3,
+    "_links": {
+        "self": { "href": "/projects/1/issues"},
+        "parent": { "href": "/projects/1"}
+    },
+    "_embedded": {
+        "issues": [
+            {
+                "name": "Issue 1",
+                "_links": {
+                    "self": { "href": "/projects/1/issues/1"}
+                }
+            },
+            {
+                "name": "Issue 2",
+                "_links": {
+                    "self": { "href": "/projects/1/issues/2"}
+                }
+            },
+            {
+                "name": "Issue 3",
+                "_links": {
+                    "self": { "href": "/projects/1/issues/3"}
+                }
+            }
+        ]
+    }
+}

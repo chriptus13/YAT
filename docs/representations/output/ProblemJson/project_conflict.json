@@ -1,0 +1,5 @@
+{
+    "type": "UniqueAttributeViolationException",
+    "title": "Unique attribute violation error.",
+    "detail": "Project name needs to be unique."
+}

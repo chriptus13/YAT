@@ -1,0 +1,5 @@
+{
+    "type": "InvalidOperationException",
+    "title": "Invalid operation.",
+    "detail": "Cannot remove default transition."
+}

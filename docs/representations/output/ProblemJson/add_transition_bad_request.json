@@ -1,0 +1,5 @@
+{
+    "type": "InvalidOperationException",
+    "title": "Invalid operation.",
+    "detail": "Start state and end state cannot be equal."
+}

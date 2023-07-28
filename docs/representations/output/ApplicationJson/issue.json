@@ -1,0 +1,9 @@
+{ 
+    "id": 1,
+    "creator": "marcomartins1998",
+    "name": "Issue 1",
+    "description": "Issue example 1",
+    "created": "2018-09-18",
+    "closed": "2019-04-08",
+    "state": "closed"
+}

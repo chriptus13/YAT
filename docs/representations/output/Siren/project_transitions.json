@@ -1,0 +1,49 @@
+// Media-Type: application/vnd.siren+json
+
+{
+    "class": [ "array" ],
+    "properties": {
+        "count": 2
+    },
+    "links": [
+        { "rel": [ "self" ], "href": "/projects/1/transitions" },
+        { "rel": [ "parent" ], "href": "/projects/1" }
+    ],
+    "actions": [
+        {
+            "name": "/actions/create-transition",
+            "title": "Create transition",
+            "method": "POST",
+            "href": "/projects/1/transitions",
+            "type": "application/json",
+            "fields": [
+                { "name": "startState", "type": "text" },
+                { "name": "endState", "type": "text" }
+            ]
+        }
+    ],
+    "entities": [
+        {
+            "class": ["transition"],
+            "rel": ["item"],
+            "properties": {
+                "startState": "archived",
+                "endState": "closed"
+            },
+            "links": [
+                { "rel": [ "self" ], "href": "/projects/1/transitions/1" }
+            ]
+        },
+        {
+            "class": ["transition"],
+            "rel": ["item"],
+            "properties": {
+                "startState": "new",
+                "endState": "closed"
+            },
+            "links": [
+                { "rel": [ "self" ], "href": "/projects/1/transitions/1" }
+            ]
+        }
+    ]
+}

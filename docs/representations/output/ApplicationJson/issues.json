@@ -1,0 +1,29 @@
+[
+    { 
+        "id": 1,
+        "creator": "marcomartins1998",
+        "name": "Issue 1",
+        "description": "Issue example 1",
+        "created": "2017-07-18",
+        "closed": "2017-12-29",
+        "state": "closed"
+    },
+    { 
+        "id": 2,
+        "creator": "chriptus13",
+        "name": "Issue 2",
+        "description": "Issue example 2",
+        "created": "2018-09-18",
+        "closed": "2019-04-08",
+        "state": "closed"
+    },
+    { 
+        "id": 3,
+        "creator": "cbartolomeu",
+        "name": "Issue 3",
+        "description": "Issue example 3",
+        "created": "2018-02-12",
+        "closed": "2018-04-27",
+        "state": "closed"
+    }
+]

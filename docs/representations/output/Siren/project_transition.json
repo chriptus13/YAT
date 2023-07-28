@@ -1,0 +1,22 @@
+// Media-Type: application/vnd.siren+json
+
+{
+    "class": [ "transition" ],
+    "properties": { 
+        "startState": "archived",
+        "endState": "closed"
+    },
+    "links": [ 
+        { "rel": [ "self" ], "href": "/projects/1/transitions/1" },
+        { "rel": [ "parent" ], "href": "/projects/1" }
+    ],
+    "actions": [
+        {
+            "name": "/actions/delete-transition",
+            "title": "Delete transition",
+            "method": "DELETE",
+            "href": "/projects/1/transitions/1"
+        }
+    ],
+    "entities": [ ]
+}

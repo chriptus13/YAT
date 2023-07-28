@@ -1,0 +1,15 @@
+{
+    "name": "Project 1",
+    "description": "Project example 1",
+    "initialState": "Created",
+    "_links": {
+        "self": { "href": "/projects/1" },
+        "collection": { "href": "/projects" },
+        "/rels/issues": { "href": "/projects/1/issues" },
+        "/rels/labels": { "href": "/projects/1/labels" },
+        "/rels/states": { "href": "/projects/1/states" },
+        "/rels/transitions": { "href": "/projects/1/transitions" },
+        "/rels/members": { "href": "/projects/1/members" }
+    },
+    "_embedded": {}
+}

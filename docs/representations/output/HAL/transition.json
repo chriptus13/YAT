@@ -1,0 +1,9 @@
+{ 
+    "startState": "archived",
+    "endState": "closed",
+    "_links": {
+        "self": { "href": "/projects/1/transitions/1"},
+        "parent": { "href": "/projects/1"}
+    },
+    "_embedded": {}
+}

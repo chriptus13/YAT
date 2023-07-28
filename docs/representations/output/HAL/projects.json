@@ -1,0 +1,28 @@
+{
+    "count": 3,
+    "_links": {
+        "self": { "href": "/projects"}
+    },
+    "_embedded": {
+        "projects": [
+            {
+                "name": "Project 1",
+                "_links": {
+                    "self": { "href": "/projects/1"}
+                }
+            },
+            {
+                "name": "Project 2",
+                "_links": {
+                    "self": { "href": "/projects/2"}
+                }
+            },
+            {
+                "name": "Project 3",
+                "_links": {
+                    "self": { "href": "/projects/3"}
+                }
+            }
+        ]
+    }
+}

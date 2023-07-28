@@ -1,0 +1,5 @@
+{
+    "type": "EntityNotFoundException",
+    "title": "Entity not found.",
+    "detail": "Issue not found."
+}

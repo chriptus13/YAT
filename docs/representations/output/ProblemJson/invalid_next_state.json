@@ -1,0 +1,5 @@
+{
+    "type": "InvalidOperationException",
+    "title": "Invalid operation.",
+    "detail": "Invalid state. State [SOME_STATE] does not exist."
+}
